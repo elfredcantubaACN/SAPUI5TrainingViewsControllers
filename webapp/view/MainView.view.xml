@@ -43,44 +43,7 @@
                         <Input id="idInputCreditCard" value="" visible="false"/>
                     </f:content>
                 </f:SimpleForm>
-                <Table id="idTableSCart" inset="false">
-                    <headerToolbar>
-                        <OverflowToolbar id="idOFT">
-                            <content>
-                                <Title id="idTableTitleSCart" text="{i18n>shoppingCart}"/>
-                                <ToolbarSpacer id="idTSpacer"/>
-                                <Button id="idBtnAddItems" icon="sap-icon://cart-4" tooltip="{i18n>addToCart}" press="onAddItem"/>
-                            </content>
-                        </OverflowToolbar>
-                    </headerToolbar>
-                    <columns>
-                        <Column id="idCol1">
-                            <Text id="idColText1" text="{i18n>item}" />
-                        </Column>
-                        <Column id="idCol2">
-                            <Text id="idColText2" text="{i18n>quantity}" />
-                        </Column>
-                        <Column id="idCol3">
-                            <Text id="idColText3" text="{i18n>price}" />
-                        </Column>
-                    </columns>
-                    <items>
-                        <ColumnListItem id="idColListItem1" vAlign="Middle">
-                            <cells>
-                                <Text id="idText1" text="{i18n>iphone14ProMax}" />
-                                <Text id="idText2" text="{i18n>two}" />
-                                <Text id="idText3" text="{i18n>twoK}" />
-                            </cells>
-                        </ColumnListItem>
-                        <ColumnListItem id="idColListItem2" vAlign="Middle">
-                            <cells>
-                                <Text id="idText4" text="{i18n>louiseVuitton}" />
-                                <Text id="idText5" text="{i18n>one}" />
-                                <Text id="idText6" text="{i18n>fourteenK}" />
-                            </cells>
-                        </ColumnListItem>
-                    </items>
-                </Table>
+                <core:Fragment fragmentName="com.training.exer1cantuba.fragment.ShoppingCart" type="XML" />
             </VBox>
         <footer>
             <OverflowToolbar id="idOFTFooter">
