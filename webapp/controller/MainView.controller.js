@@ -5,7 +5,7 @@ sap.ui.define([
 * @param {typeof sap.ui.core.mvc.Controller} Controller
 */
 function (Controller, MessageToast) {
-    "use strict";
+
 
     return Controller.extend("com.training.exer1cantuba.controller.MainView", {
         onInit() {
